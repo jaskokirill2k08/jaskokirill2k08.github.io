@@ -16,10 +16,17 @@
       crossorigin="anonymous"
     />
 
+    <!-- подключаем шрифт Google  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Лучшие детские курорты и маршруты</title>
   </head>
+
   <body>
     <!-- ============================================== start first -->
     <div class="container first">
@@ -56,31 +63,64 @@
         <div class="wraperMilenium">
           <h1>Детский отдых</h1>
           <h2>Путевки в лучшие лагеря по ценам ниже рынка на 20%</h2>
-          <div class="row">
-            <img class="col-2" src="img/shield.png" alt="" />
-            <h6 class="col-10">
-              Мы сотрудничаем только с лицензированными лагерями, прошедшими
-              проверку контролирующими органами
-            </h6>
-            <p class="prob">hhhhhhhhhhhi</p>
-            <p class="">Наши дети в безопасности</p>
-          </div>
-          <div class="row">
-            <img class="col-2" src="img/wallet.png" alt="" />
-            <h5 class="col-10">Путевки частично оплачиваются из бюджета</h5>
-            <p class="prob">hhhhhhhhhhhi</p>
-            <p>Вся информация и документы в офисе</p>
-          </div>
-          <div class="row">
-            <img class="col-2" src="img/girl.png" alt="" />
-            <h5 class="col-10">
-              Профессиональные вожатые и педагоги с опытом работы в лагерях от 3
-              до 30 лет
-            </h5>
-            <p class="prob">hhhhhhhhhhhi</p>
-            <p>Во время отдыха педагоги всегда на связи</p>
+          <div class="wrapperTab">
+            <table>
+              <tr>
+                <td><img src="img/shield.png" alt="" /></td>
+                <td>
+                  <strong>
+                    Мы сотрудничаем только с лицензированными лагерями,
+                    прошедшими проверку контролирующими органами</strong
+                  >
+                  <br />
+                  <span class="meText">Наши дети в безопасности</span>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="img/wallet.png" alt="" /></td>
+                <td>
+                  <strong>Путевки частично оплачиваются из бюджета</strong>
+                  <br />
+                  <span class="meText">
+                    Вся информация и документы в офисе</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/girl.png" alt="" />
+                </td>
+                <td>
+                  <strong
+                    >Профессиональные вожатые и педагоги с опытом работы в
+                    лагерях от 3 до 30 лет</strong
+                  >
+                  <br />
+                  <span class="meText"
+                    >Во время отдыха педагоги всегда на связи</span
+                  >
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------- форма заказ 1 ----------------- -->
+    <div class="container-fluide">
+      <div class="container">
+        <h2>Мы готовы дать Вам подробную консультацию</h2>
+        <p>
+          Поможем правильно подобрать путевку для Вашего ребенка под любой
+          бюджет
+        </p>
+        <p>Для этого заполните форму ниже - мы перезвоним Вам за 60 секунд</p>
+        <form action="#" method="POST">
+          <input type="text" />
+          <input type="tel" />
+          <input type="submit" value="Получить консультацию" />
+        </form>
       </div>
     </div>
     <!-- Optional JavaScript -->
