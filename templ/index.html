@@ -24,6 +24,10 @@
 
     <link rel="stylesheet" href="css/main.css" />
 
+    <!-- подключаю favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
     <title>Лучшие детские курорты и маршруты</title>
   </head>
 
@@ -108,19 +112,209 @@
     </div>
 
     <!-- ------------------------------- форма заказ 1 ----------------- -->
-    <div class="container-fluide">
+    <div class="container-fluide zakaz">
       <div class="container">
         <h2>Мы готовы дать Вам подробную консультацию</h2>
         <p>
           Поможем правильно подобрать путевку для Вашего ребенка под любой
           бюджет
         </p>
-        <p>Для этого заполните форму ниже - мы перезвоним Вам за 60 секунд</p>
+        <img src="img/line.png" alt="" />
+
         <form action="#" method="POST">
-          <input type="text" />
-          <input type="tel" />
-          <input type="submit" value="Получить консультацию" />
+          <p>Для этого заполните форму ниже - мы перезвоним Вам за 60 секунд</p>
+          <input
+            type="text"
+            id="zname"
+            class="zname"
+            name="zname"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="tel"
+            id="ztel"
+            class="ztel"
+            name="ztel"
+            placeholder="Ваш телефон"
+          />
+          <input type="submit" value="Получить консультацию" class="zsubmit" />
         </form>
+        <p class="meClass">
+          или перезвоните нам по телефону:
+          <img src="img/mobile-phone.png" alt="" class="zmobil" />
+          <span>+7 (8182) 20-80-10 </span>
+        </p>
+      </div>
+    </div>
+    <!-- -------------------------------- start voucher camp ----------------- -->
+    <div class="container voucherCamp">
+      <h2>Выберите путевку в лучшие лагеря страны</h2>
+      <p class="pCatalog">Каталог путевок с ценами:</p>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link itemTab active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Детский отдых <br />
+            в Архангельской области
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link itemTab"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >Детский отдых <br />
+            по России</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link itemTab"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#contact"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Детский отдых <br />
+            за рубежом</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="row justify-content-center">
+            <div class="card itemCard1 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ДОЛ «Ватса-Парк»</h5>
+                <p class="card-text">
+                  (Котласский район, Архангельская область)
+                </p>
+                <a href="#" class="linkCard">Подробнее </a>
+              </div>
+            </div>
+            <div class="card itemCard2 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ДОЛ «Ватса-Парк»</h5>
+                <p class="card-text">
+                  (Котласский район, Архангельская область)
+                </p>
+                <a href="#" class="linkCard">Подробнее </a>
+              </div>
+            </div>
+            <div class="card itemCard3 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ДОЛ «Ватса-Парк»</h5>
+                <p class="card-text">
+                  (Котласский район, Архангельская область)
+                </p>
+                <a href="#" class="linkCard">Подробнее </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <div class="row justify-content-center">
+            <div class="card itemCard1 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="linkCard">Переход куда-нибудь</a>
+              </div>
+            </div>
+            <div class="card itemCard2 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="linkCard">Переход куда-нибудь</a>
+              </div>
+            </div>
+            <div class="card itemCard3 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="linkCard">Переход куда-нибудь</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          <div class="row justify-content-center">
+            <div class="card itemCard1 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="linkCard">Переход куда-нибудь</a>
+              </div>
+            </div>
+            <div class="card itemCard2 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="linkCard">Переход куда-нибудь</a>
+              </div>
+            </div>
+            <div class="card itemCard3 col-3 p-4 m-4">
+              <img src="img/children1.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Название карточки</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="linkCard">Переход куда-нибудь</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Optional JavaScript -->

@@ -1,9 +1,10 @@
+/* общие настройка страницы -------------------------------- */
 body,
 * {
   font-family: "Roboto Slab", serif;
   font-size: 16px;
 }
-
+/* первая секция -------------------------------- */
 .logo a {
   font-family: "Verdana";
   font-size: 12px;
@@ -50,11 +51,12 @@ body,
   border-radius: 15px;
   margin-top: 15px;
 }
-
+/* билборд -------------------------------- */
 .bilbord {
   background-image: url("../img/safe_image_fon.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-position: right bottom;
 }
 
 .wraperMilenium {
@@ -94,4 +96,160 @@ body,
 
 .meText {
   font-family: "Verdana";
+}
+
+/* форма заказа -------------------------------- */
+.zakaz {
+  background-image: url("../img/safe_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.zakaz h2 {
+  margin: 100px auto 30px auto;
+}
+
+.zakaz img {
+  margin: 60px auto;
+  width: 40%;
+  height: 12px;
+}
+
+.zakaz form {
+  font-family: Verdana;
+}
+
+.zakaz form p {
+  font-family: Verdana;
+  margin-bottom: 40px;
+}
+
+.zakaz form input {
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.zakaz form input:focus {
+  outline: none;
+  border-color: #ffaf02;
+}
+
+.zakaz form .zsubmit {
+  background-color: #ffaf02;
+  text-transform: uppercase;
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.zakaz .zmobil {
+  width: 30px;
+  height: 30px;
+}
+
+.zakaz .meClass {
+  font-family: Verdana;
+  font-weight: normal;
+}
+
+.zakaz .zname {
+  background-image: url("../img/avatar.png");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  padding-left: 50px;
+}
+
+.zakaz .ztel {
+  background-image: url("../img/telephone.png");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  padding-left: 50px;
+}
+
+.zakaz .zsubmit {
+  padding: 0 40px;
+}
+
+/* --------------------------------- voucher camp */
+
+.voucherCamp {
+  text-align: center;
+}
+
+.voucherCamp h2 {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.voucherCamp .pCatalog {
+  margin-top: 30px;
+  font-weight: normal;
+  font-family: Verdana;
+  font-size: 22px;
+}
+
+.voucherCamp .itemTab {
+  height: 78px;
+  background-color: #d8f0f0;
+}
+
+.voucherCamp .nav-tabs .nav-link.active {
+  background-color: #ffaf02 !important;
+  outline: none;
+}
+
+.voucherCamp .nav-tabs .nav-link {
+  margin-right: 30px;
+  border-radius: 23px 23px 0 0;
+  outline: none;
+}
+
+.voucherCamp .nav-tabs {
+  border-bottom: 5px solid #ffaf02;
+  outline: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: #ffaf02;
+  color: #fff;
+}
+
+.voucherCamp a {
+  font-weight: normal;
+  font-family: Verdana;
+  font-size: 18px;
+  color: #000;
+}
+
+.voucherCamp a:hover {
+  color: #495057;
+}
+
+.nav-item {
+  width: 30%;
+}
+
+.voucherCamp .card .card-body .card-text {
+  font-weight: normal;
+  font-family: Verdana;
+  font-size: 14px;
+  color: #001e28;
+}
+
+.voucherCamp .card .card-body .linkCard {
+  text-decoration: none;
+  border-bottom: 7px solid #ffaf02;
+}
+
+.voucherCamp .card:hover {
+  outline: 1px solid #ffaf02;
+}
+
+.voucherCamp .card:hover > .card-body .linkCard {
+  border-bottom: 18px solid #ffaf02;
 }
